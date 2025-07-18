@@ -256,3 +256,24 @@ nav {
         margin: auto;
     }
 }
+
+/* Boxed and Centered Page Content */
+.page-content {
+    max-width: 800px;
+    margin: 40px auto; /* center the box */
+    padding: 30px;
+    background-color: #111; /* subtle background contrast */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+    text-align: justify;
+    line-height: 1.6;
+    color: greenyellow; /* match your theme */
+}
+
+/* Section Headings */
+.page-content h1, 
+.page-content h2 {
+    color: #ADFF2F;
+    margin-top: 30px;
+    text-align: center;
+}
