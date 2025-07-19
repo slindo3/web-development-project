@@ -1,73 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 </head>
+<body class="quiz-page">
 
-
-<!-- Code for the three line menu -->
+<!-- Hamburger Menu -->
 <div class="off-screen-menu">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="quiz.html">Quiz</a></li>
-    </ul>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="web1.html">Web 1.0</a></li>
+    <li><a href="web2.html">Web 2.0</a></li>
+    <li><a href="web3.html">Web 3.0</a></li>
+    <li><a href="sources.html">Resources</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+    <li><a href="quiz.html">Quiz</a></li>
+  </ul>
 </div>
 <nav>
-    <div class="ham-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
+  <div class="nav-title">My First Webpage: History of the Web</div>
+  <div class="ham-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </nav>
 
-<!-- General heading text -->
-<body>
-    <h1><u>Forum</u></h1>
-</body>
+<!-- Contact Section -->
+<div class="quiz-container">
+  <h1 class="quiz-title">Contact Me</h1>
+  <div class="contact-wrapper">
+    <div class="contact-form">
+      <h3>Send a Message</h3>
+      <form>
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Your Email">
+        </div>
+        <div class="form-group">
+          <textarea name="message" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
 
-
-<!-- Code for the contact submission form. Had to make it its own division because outside of the division the code was affecting the other pages' text display. -->
-<div class="contact-forum">
-
-    <body>
-        <script src="script.js"></script>
-        <section class="contact">
-            <div class="container">
-                <h2>Contact Us</h2>
-                <div class="contact-wrapper">
-                    <div class="contact-form">
-                        <h3>Send us a message</h3>
-                        <form>
-                            <div class="form-group">
-                                <input type="text" name="name" placeholder="Your Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" name="email" placeholder="Your Email">
-                            </div>
-                            <div class="form-group">
-                                <textarea name="message" placeholder="Your Message"></textarea>
-                            </div>
-                            <button type="submit">Send Message</button>
-                        </form>
-                    </div>
-                    <div class="contact-info">
-                        <h3>Contact Information</h3>
-                        <p><i class="fas fa-phone"></i>987-654-3210</p>
-                        <p><i class="fas fa-envelope"></i>info@example.com</p>
-                        <p><i class="fas fa-map-marker-alt"></i>100 Internet Drive, Google, USA</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </body>
+    <div class="contact-info" style="margin-top: 2rem;">
+      <h3>Contact Information</h3>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:slindo5@students.kennesaw.edu">slindo5@students.kennesaw.edu</a></p>
+      <p><i class="fab fa-github"></i> <a href="https://github.com/slindo3" target="_blank">github.com/slindo3</a></p>
+      <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/slnd1" target="_blank">linkedin.com/in/slnd1</a></p>
+    </div>
+  </div>
 </div>
 
-
-
+<script src="script.js"></script>
+</body>
 </html>

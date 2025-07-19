@@ -5,34 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Home</title>
   <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 </head>
 <body>
 
   <!-- Hamburger Menu -->
   <div class="off-screen-menu">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="web1.html">Web 1.0</a></li>
-      <li><a href="web2.html">Web 2.0</a></li>
-      <li><a href="web3.html">Web 3.0</a></li>
-      <li><a href="resources.html">Resources</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="quiz.html">Quiz</a></li>
-    </ul>
-  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="web1.html">Web 1.0</a></li>
+    <li><a href="web2.html">Web 2.0</a></li>
+    <li><a href="web3.html">Web 3.0</a></li>
+    <li><a href="sources.html">Resources</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="quiz.html">Quiz</a></li>
+  </ul>
+</div>
   <nav>
-    <div class="ham-menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </nav>
+  <div class="nav-title">My First Webpage: History of the Web</div>
+  <div class="ham-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
 
   <!-- Link JS for the menu toggle -->
   <script src="script.js"></script>
 
-  <!-- Main Content Box -->
+  <!-- Main content of the website explanation -->
   <div class="page-content">
     <h1>Welcome</h1>
     <p>This is my very first website, built as part of a class project for IT 3203: Intro to Web Development at Kennesaw State University. I'm proud to showcase the skills I've learned including HTML, CSS, and JavaScript.</p>
@@ -49,13 +51,27 @@
       <li><strong>Resources:</strong> The sources and tools used for this project</li>
     </ul>
 
-    <h2>Visual Timeline (Quick Overview)</h2>
-    <ul>
-      <li><strong>1960s–1980s:</strong> ARPANET, TCP/IP — the birth of networking</li>
-      <li><strong>1990s:</strong> Web 1.0, HTML, Mosaic, W3C</li>
-      <li><strong>2000s:</strong> Web 2.0, Cloud computing, Mobile web</li>
-      <li><strong>2010s–Now:</strong> Web 3.0, AI, NFTs, Smart tech, Blockchain</li>
-    </ul>
-  </div>
-</body>
-</html>
+    <h2>Timeline of the Web</h2>
+      <div class="timeline-horizontal">
+        <div class="timeline-step">
+          <div class="timeline-icon"><i class="fas fa-file-alt"></i></div>
+          <div class="timeline-label">
+            <h3>Web 1.0</h3>
+            <p>Static content, read-only pages.</p>
+          </div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-icon"><i class="fas fa-comments"></i></div>
+          <div class="timeline-label">
+            <h3>Web 2.0</h3>
+            <p>Interactive, user-generated content.</p>
+          </div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-icon"><i class="fas fa-brain"></i></div>
+          <div class="timeline-label">
+            <h3>Web 3.0</h3>
+            <p>Decentralized, AI, blockchain.</p>
+          </div>
+        </div>
+      </div>

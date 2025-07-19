@@ -2,32 +2,57 @@
 
 //questions
 const questions = [
-    {
-        question: "How many links are on the “About” page",
-        options: ["a. 5", "b. 8", "c. 7", "d. 10"],
-        correct: "d. 10"
-    },
-    {
-        type: "text", //fill in the blank question
-        question: "Fill in the blank: What website does the link at the bottom of the “Home” page take you to? (Type the full URL)",
-        correct: "google.com"
-    },
-    {
-        question: "Why was this webpage created?",
-        options: ["a. For an interview", "b. As a class project", "c. Paid for by a client", "d. As a personal project"],
-        correct: "b. As a class project"
-    },
-    {
-        question: "What color do the links turn when the mouse hovers over them?",
-        options: ["a. Pink", "b. Red", "c. Blue", "d. Purple"],
-        correct: "c. Blue"
-    },
-    {
-        type: "checkbox", //multiple answer question
-        question: "Which source website was used to help create this webpage? (Select multiple)",
-        options: ["a. Intro to Javascript", "b. CSS", "c. HTML", "d. Python", "e. HTML Tutorial"],
-        correct: ["a. Intro to Javascript", "b. CSS", "c. HTML", "e. HTML Tutorial"]
-    }
+  {
+    question: "What is Web 1.0 mostly known for?",
+    options: [
+      "a. Reading static websites",
+      "b. Writing blogs",
+      "c. Watching videos",
+      "d. Playing games with friends"
+    ],
+    correct: "a. Reading static websites"
+  },
+  {
+    question: "What makes Web 2.0 different from Web 1.0?",
+    options: [
+      "a. It uses only black and white pages",
+      "b. It doesn't work on phones",
+      "c. It allows people to interact and post content",
+      "d. It runs without the internet"
+    ],
+    correct: "c. It allows people to interact and post content"
+  },
+  {
+    question: "Which one is a goal of Web 3.0?",
+    options: [
+      "a. Make websites slower",
+      "b. Let users control their own data",
+      "c. Implement AI features",
+      "d. Creating gifs"
+    ],
+    correct: "b. Let users control their own data"
+  },
+  {
+    type: "text",
+    question: "Fill in the blank: Who is known as the inventor of the World Wide Web?",
+    correct: "Tim Berners-Lee"
+  },
+  {
+    type: "checkbox",
+    question: "Which sources were used to help create this website? (Select all that apply)",
+    options: [
+      "a. W3Schools HTML Tutorial",
+      "b. MDN Web Docs",
+      "c. YouTube Web Evolution Video",
+      "d. TikTok",
+      "e. GitHub"
+    ],
+    correct: [
+      "a. W3Schools HTML Tutorial",
+      "b. MDN Web Docs",
+      "c. YouTube Web Evolution Video"
+    ]
+  }
 ];
 
 //interactive javascript options
@@ -157,4 +182,4 @@ function showResults() { //shows results with correct answers and user's answers
 }
 
 submitBtn.addEventListener("click", handleNextQuestion); //triggers next question or shows results
-showQuestion(); // show first question on load
+showQuestion(); //show first question on load

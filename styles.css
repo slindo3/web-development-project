@@ -1,4 +1,4 @@
-/* Styling color and font for the general text in my index and about page. */
+/*Styling color and font for the general text in my index and about page.*/
 body {
     background: black;
     color: greenyellow;
@@ -6,17 +6,17 @@ body {
     text-align: center;
 }
 
-/* Removing the underline from hyperlinks unless the cursor hovers over them. */
+/*Removing the underline from hyperlinks unless the cursor hovers over them.*/
 a {
     text-decoration: none;
     color: white;
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: blue;
 }
 
-/* Styling code for the three-line menu at the top right. */
+/*Styling code for the three-line menu at the top right.*/
 
 .off-screen-menu {
     background-color: greenyellow;
@@ -39,10 +39,43 @@ a:hover {
     right: 0;
 }
 
+/*Hamburger menu link color styling*/
+.off-screen-menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.off-screen-menu a:hover {
+    color: black;
+    text-decoration: none;
+}
+
 nav {
-    padding: 1rem;
-    display: flex;
-    background-color: greenyellow;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: greenyellow;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Styling for the title inside the nav bar*/
+.nav-title {
+  flex-grow: 1;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 1.8rem;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 0 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .ham-menu {
@@ -86,121 +119,270 @@ nav {
     transform: translate(-50%, 50%) rotate(-45deg);
 }
 
-/* Styling for the contact form layout */
-
-.contact-form {
-    * {
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-        font-family: 'Courier New', Courier, monospace;
-    }
-
-    .contact {
-        min-height: 100vh;
-        background-color: black;
-        padding: 50px;
-        text-align: center;
-    }
-
-    .container {
-        max-width: 800px;
-        margin: 0 auto;
-    }
-
-    .container h2 {
-        font-size: 36px;
-        margin-bottom: 40px;
-        color: black;
-    }
-
-    .contact-wrapper {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 30px;
-    }
-
-    .contact-form {
-        text-align: left;
-    }
-
-    .contact-form h3 {
-        font-size: 40px;
-        margin-bottom: 20px;
-        color: white;
-    }
-
-    .form-group {
-        margin-bottom: 20px;
-    }
-
-    input,
-    textarea {
-        width: 100%;
-        padding: 12px;
-        border-radius: 8px;
-        border: none;
-        background-color: greenyellow;
-        color: black;
-    }
-
-    input:focus,
-    textarea:focus {
-        outline: none;
-        box-shadow: 0 0 8px white;
-    }
-
-    button {
-        display: inline-block;
-        padding: 12px 24px;
-        background-color: grey;
-        color: black;
-        border: none;
-        cursor: pointer;
-        transition: 0.3s ease;
-    }
-
-    button:hover {
-        background-color: blue;
-    }
-
-    .contact-info {
-        text-align: left;
-    }
-
-    .contact-info h3 {
-        font-size: 24px;
-        margin-bottom: 20px;
-        color: white;
-    }
-
-    .contact-info p {
-        margin-bottom: 10px;
-        color: white;
-    }
-
-    .contact-info i {
-        color: white;
-        margin-right: 10px;
-    }
-
-    @media screen and (max-width: 768px) {
-        .container {
-            padding: 20px;
-        }
-
-        .contact-wrapper {
-            grid-template-columns: 1fr;
-        }
-    }
+/*Timeline on Home page*/
+.timeline-horizontal {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 2rem;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  padding: 1rem 0;
 }
 
+.timeline-step {
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+}
 
-/* Responsive Design: Media Queries */
+.timeline-icon {
+  font-size: 2.5rem;
+  color: #39ff14;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px #39ff14;
+}
 
-/* Small devices (phones, less than 600px) */
+.timeline-label {
+  background-color: #111;
+  border: 1px solid #39ff14;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(57, 255, 20, 0.3);
+}
+
+.timeline-label h3 {
+  margin: 0;
+  color: #39ff14;
+}
+
+/*Styling for the contact form layout on the contact page using '.quiz-page' class to scope changes to the contact page*/
+.quiz-page .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/*Contact form styling (form inputs, message box, button)*/
+.quiz-page .contact-form {
+    width: 100%;
+    max-width: 500px;
+}
+
+.quiz-page .contact-form h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #39ff14;
+}
+
+/*Styling for input fields and text area*/
+.quiz-page input[type="text"],
+.quiz-page input[type="email"],
+.quiz-page textarea {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    border: 1px solid #39ff14;
+    border-radius: 8px;
+    background-color: #111;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*Focus glow when user clicks an input field*/
+.quiz-page input:focus,
+.quiz-page textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px #39ff14;
+}
+
+/*Styling for the submit button*/
+.quiz-page form button.submit-btn {
+    background-color: #39ff14;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    padding: 0.6rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.quiz-page form button.submit-btn:hover {
+    background-color: #2ecc71;
+}
+
+/*Contact info section below the form*/
+.quiz-page .contact-info {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.quiz-page .contact-info h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #39ff14;
+}
+
+.quiz-page .contact-info p {
+    color: white;
+    margin: 0.5rem 0;
+}
+
+.quiz-page .contact-info i {
+    margin-right: 8px;
+    color: #39ff14;
+}
+
+/*Contact links*/
+.quiz-page .contact-info a {
+    color: #39ff14;
+    text-decoration: none;
+}
+
+.quiz-page .contact-info a:hover {
+    text-decoration: none;
+    color: blue;
+}
+
+/*Styling for the quiz page*/
+
+.quiz-page {
+  background-color: #000;
+  color: #fff;
+}
+
+.quiz-page .quiz-container {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #000;
+  color: white;
+  border: 4px solid #39ff14;
+  border-radius: 50px;
+  box-shadow: 0 0 20px #39ff14;
+  text-align: center;
+}
+
+.quiz-page .quiz-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.quiz-page .question {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.quiz-page .options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.quiz-page .options label {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.6rem;
+  background-color: #111;
+  color: white;
+  border: 1px solid #39ff14;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: left;
+}
+
+.quiz-page .options label:hover {
+  background-color: #1a1a1a;
+}
+
+.quiz-page .options label:hover {
+  background-color: #1a1a1a;
+}
+
+.quiz-page .text-input {
+  width: 90%;
+  padding: 0.5rem;
+  border: 1px solid #39ff14;
+  border-radius: 6px;
+  background-color: #111;
+  color: white;
+}
+
+.quiz-page .submit-btn {
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  background-color: #39ff14;
+  color: black;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.quiz-page .submit-btn:hover {
+  background-color: blue;
+}
+
+.quiz-page ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.quiz-page h2,
+.quiz-page h3 {
+  color: #39ff14;
+}
+
+/*Styling for the answer review page of the quiz*/
+.quiz-page .quiz-container ul {
+  padding: 0;
+  list-style: none;
+  margin-top: 1.5rem;
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #111;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  border: 2px solid #39ff14;
+  box-shadow: 0 0 12px #39ff14;
+}
+
+.quiz-page .quiz-container li {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 1rem;
+}
+
+.quiz-page .quiz-container h2 {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.quiz-page .quiz-container h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+/*Code to implement responsive web design into my website*/
+
+/*Media query for small devices (phones, less than 600px)*/
 
 @media screen and (max-width: 599px) {
+    
+    .nav-title {
+    font-size: 1.2rem;
+    }
+    
     body {
         font-size: 14px;
         padding: 10px;
@@ -221,7 +403,7 @@ nav {
     }
 }
 
-/* Medium devices (tablets, 600px - 991px) */
+/*Media query for medium devices (tablets, 600px - 991px)*/
 
 @media screen and (min-width: 600px) and (max-width: 991px) {
     body {
@@ -239,7 +421,7 @@ nav {
     }
 }
 
-/* Large devices (desktops, 992px and up) */
+/*Media query for large devices (desktops, 992px and up)*/
 
 @media screen and (min-width: 992px) {
     .quiz-container {
@@ -257,23 +439,30 @@ nav {
     }
 }
 
-/* Boxed and Centered Page Content */
+/*Code to box and center page content*/
 .page-content {
     max-width: 800px;
-    margin: 40px auto; /* center the box */
+    margin: 40px auto; /*center the box*/
     padding: 30px;
-    background-color: #111; /* subtle background contrast */
+    background-color: #111; /*subtle background contrast*/
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
     text-align: justify;
     line-height: 1.6;
-    color: greenyellow; /* match your theme */
+    color: greenyellow; /*match theme*/
 }
 
-/* Section Headings */
+/*Style for the section headings*/
 .page-content h1, 
 .page-content h2 {
     color: #ADFF2F;
     margin-top: 30px;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline-horizontal {
+    flex-direction: column;
+    align-items: center;
+  }
 }
